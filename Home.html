@@ -1,0 +1,456 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link href="asset/css/Main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="asset/FA-5.9.0/css/all.css">
+
+    <title>CartWeboon</title>
+  </head>
+  <body>   
+<!-- Navibar-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid " href="#">
+      <a class="navbar-brand" href="Home.html"><img src="asset/img/logo2.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="Home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Account.html" class="nav-link">Acoount</a>
+          </li>
+          <li class="nav-item">
+            <a href="Genre.html" class="nav-link">Genre</a>
+          </li>
+          <li class="nav-item">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+
+<!-- slide -->
+  <div id="slides" class="carousel slides" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>  
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+      <li data-target="#slides" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <a href="Home.html">
+          <img src="asset/img/yellow.png" style="width: 100%; height: 100%">
+        </a>
+      </div>
+      <div class="carousel-item " >
+        <a href="aoharu.html">
+          <img src="asset/img/aoharu.gif" style="width: 100%; height: 100%">
+          <div class="carousel-caption">
+            <h2 class="display-2"> Ao Haru Ride</h2>
+            <p> Click Here To Read</p>
+          </div>
+        </a>        
+      </div>    
+      <div class="carousel-item " >
+        <a href="conan.html">
+          <img src="asset/img/conan1.jpg" style="width: 100%; height: 100%">
+          <div class="carousel-caption">        
+            <p class="display-1">Conan Special Edition</p>
+          </div>
+        </a>
+      </div>        
+        <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+  </div>
+
+  <!-- jumbotron-->
+  <div class="container-fluid">
+    <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead"> Create Your Own Comic From Now and Publish Free In this Web and Get The Coins For Your Adsense</p>      
+        <a href="#"><button type="button" class="button btn-outline-secondary btn-lg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> LOGIN </button></a>
+          <div id="id01" class="modal">
+              <form class="modal-content animate" action="/Account.html" onsubmit="return validasi_login(this)" >
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="asset/img/ava.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="user"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="username" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit" >Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+        
+        <a href="#"><button type="button" class="button btn-outline-secondary btn-lg" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SIGN IN</button></a>
+        <div id="id02" class="modal2">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal2-content" action="/Account.html" onsubmit="return validasi_input(this)">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an Account.</p>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required >
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function validasi_input(form){
+      pola_email=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      if (!pola_email.test(form.email.value)){
+        alert ('Email kurang lengkap, coba gunakan @ atau .');
+        form.email.focus();
+        return false;
+      }
+      return (true);
+    }
+    </script>
+
+  <script type="text/javascript">
+    function validasi_login(form){
+      pola_username=/^[a-zA-Z0-9\_\-]{8,100}$/;
+      if (!pola_username.test(form.username.value)){
+          alert ('Username minimal 6 karakter dan hanya boleh Huruf dan Angka!');
+          form.username.focus();
+          return false;
+      }
+    return (true);
+    }
+  </script>
+
+<!-- Welcome Section-->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center ">
+      <div class="col-12">
+        <h1 class="display-5"> Welcome To CartWeboon Home </h1>
+      </div>
+    </div>
+  </div>
+
+  <!--Colomn Section-->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">      
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="Aoharu.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/ao1.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="Aoharu.html">
+          <h3> Ao Haru Ride</h3>
+        </a>          
+        <a href="Ao1.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="conan.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/conan.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="conan.html">
+          <h3> Conan </h3>
+        </a>          
+        <a href="conan.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="naruto.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/Narto.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="naruto.html">
+          <h3> Naruto</h3>
+        </a>          
+        <a href="naruto.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="doraemon.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/Doraemon.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="doraemon.html">
+          <h3> Doraemon</h3>
+        </a>          
+        <a href="doraemon.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="Sailorm.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/SM.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="Sailorm.html">
+          <h3> Sailor Moon</h3>
+        </a>          
+        <a href="Sailorm.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="opm.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/opm.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="opm.html">
+          <h3> One Punch Man</h3>
+        </a>          
+        <a href="opm.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="Shigatsu.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/uso.png" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="uso.html">
+          <h3> Shigatsu wa Kimi no Uso</h3>
+        </a>          
+        <a href="uso.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="anohana.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/anohana.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="anohana.html">
+          <h3> AnoHana</h3>
+        </a>          
+        <a href="anohana.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <section2>
+        <div id="icon-wrapper">
+            <a href="tahilalats.html">
+              <div class="icons">                      
+                  <img class="slide-icon" src="asset/img/Tahi.jpg" >
+              </div>                    
+            </a>
+        </div>
+        </section2>
+        <a href="tahilalats.html">
+          <h3> Tahilalats</h3>
+        </a>          
+        <a href="tahilalats.html">
+          <p> Chapter 1</p>
+        </a>
+      </div>
+      
+    </div>    
+  </div>
+
+  <!-- fixed baground-->
+  <hr class="my-4">
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed"></div>
+    </div>
+  </figure>
+
+  <!--team Sec-->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5 text-center"> Meet Our Team</h1>
+      </div>
+    </div>    
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/img/aeru.jpg" style="width: 100%; height: 50%;">
+          <div class="card-body">
+            <h4 class="card-title"> Fitriani Chaerunisa</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/img/thalia.jpg" style="width: 100%; height: 50%;">
+          <div class="card-body">
+            <h4 class="card-title">Thalia Azzahra</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/img/ava.png" style="width: 100%; height: 50%;">
+          <div class="card-body">
+            <h4 class="card-title">Need You</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connecting -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2> Find and Share</h2>
+      </div>
+      <div class="col-12 social padding">
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>      
+    </div>
+  </div>
+
+    <section>
+        <footer class="page-footer font-small blue bg-dark footer ">
+          <div class="container-fluid padding">
+              <div class="col-12">
+                <hr class="Light">
+                <div class="footer-copyright text-center py-0 text-white">                            
+                <p class="copyright pull-right font-foot">
+                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">CartWeboon Team</a>, Cartoon Manga For Life
+                </p>
+              </div>
+            </div>
+          </div>            
+        </footer>
+    </section>
+
+    <script>
+          // Get the modal
+          var modal2 = document.getElementById('id02');
+                
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal2) {
+                modal2.style.display = "none";
+                }
+              }
+    </script>
+    <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+                
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+                  }
+              }
+    </script>
+
+    
+    <!--   Core JS Files   -->
+    <script src="asset/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="asset/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/release/v5.0.8/js/all.js"></script>
+  </body>
+</html>
